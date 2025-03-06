@@ -1,0 +1,198 @@
+body{
+    background: #afe0be;
+    font-family: 'Prompt', sans-serif;
+}
+.container{
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto; /* ทำให้ container อยู่ตรงกลาง */
+    overflow-y: auto; /* เปิดการเลื่อนเมื่อเนื้อหายาวเกิน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'Prompt', sans-serif;/* เพิ่มเงา */
+}
+
+
+.title {
+    font-size: 40px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ตัวหนา */
+    color: #333;
+    /* สีของข้อความ */
+    text-align: left;
+    /* จัดข้อความกึ่งกลาง */
+    padding: 10px 0;
+    /* ระยะขอบบนล่าง */
+    border-bottom: 2px solid #4CAF50;
+}
+/*เดี่ยวต้องเปลี่ยนเป็นดึงข้อมูลมาจากdatabase*/
+p {
+    text-align: left; /* จัดข้อความใน <p> ชิดซ้าย */
+    margin: 10px; /* เพิ่มช่องว่างระหว่างย่อหน้า */
+}
+
+form .origin-details .category,
+form .Forward-details .category
+{
+    display: block;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.origin-details .category label,
+.Forward-details .category label
+{
+    display: flex;
+    align-items: center;
+}
+
+form .origin-details .origin-title,
+form .consult-details .input-box .detail,
+form .options .options-title{
+    display: inline-block; /* ทำให้กล่องมีขนาดพอดีกับข้อความ */
+    padding: 10px 20px; /* เพิ่มพื้นที่รอบข้อความ */
+    background-color: rgba(122, 248, 231, 0); /* สีพื้นหลังบาง ๆ */
+    color: #000; /* สีข้อความเป็นสีดำ */
+    font-size: 17px; /* ขนาดตัวอักษร */
+    border-radius: 10px; /* มุมขอบโค้งมน */
+    box-shadow: 0 4px 8px rgba(1, 117, 53, 0.756); /* เงา */
+}
+form .origin-details,
+form .consult-details,
+form .options,
+form .violence-Forward-details{
+    text-align: left; /* จัดตำแหน่งข้อความให้ชิดซ้ายใน div ของ origin-details */
+}
+.options .category {
+    display: grid;  /* ใช้ Grid Layout */
+    grid-template-columns: repeat(4, 1fr); /* กำหนดให้มี 4 คอลัมน์ในแต่ละแถว */
+    gap: 10px; /* ระยะห่างระหว่างแต่ละปุ่ม */
+    margin-top: 10px;
+}
+
+.options .category label {
+    display: flex;
+    align-items: center; /* จัด checkbox และข้อความในแนวเดียวกัน */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* เพิ่มช่องว่างระหว่าง checkbox และข้อความ */
+}
+.consult-details .input-box textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+form .consult-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.consult-details .category label{
+    display: flex;
+    align-items: center;
+}
+.save-button {
+    display: block;
+    /* ทำให้ปุ่มเป็น block element */
+    margin-left: auto; /* เพิ่มระยะห่างด้านซ้ายเพื่อให้ชิดขวา */
+    display: block; /* ทำให้ปุ่มเป็นบล็อก */
+    background-color: #ccc;
+    /* สีพื้นหลังเป็นสีเทา */
+    color: white;
+    /* สีตัวอักษร */
+    border: none;
+    /* ไม่มีขอบ */
+    padding: 10px 20px;
+    /* ระยะห่างภายในปุ่ม */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    border-radius: 5px;
+    /* มุมขอบโค้งมน */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+    transition: background-color 0.3s ease;
+    /* ทำให้การเปลี่ยนสีเนียน */
+}
+
+
+
+/* สไตล์เมื่อ hover (เมื่อวางเมาส์เหนือปุ่ม) */
+.save-button:hover {
+    background-color: #a9a9a9;
+    /* เปลี่ยนเป็นสีเทาเข้มเมื่อ hover */
+}
+.navbar-custom {
+    background-color: #4b8063;
+    /* สีเขียวเข้ม */
+}
+
+.navbar-custom .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+ .navbar-custom .nav-link:hover {
+    color: #d7d7d7;
+    /* สีเทาอ่อน */
+}
+
+.navbar-custom .user-profile {
+    color: white;
+    font-weight: bold;
+}
+.student {
+    text-align: right;
+    align-items: center;    /* จัดแนวกลางระหว่าง label และ input */
+}
+
+.student label {
+    margin-right: 10px;     /* ระยะห่างระหว่าง label และ input */
+    font-size: 16px;        /* ขนาดตัวอักษร */
+}
+
+.student input {
+     width: 100px;           /* กำหนดความกว้างของช่อง input */
+    padding: 5px;           /* ระยะขอบด้านใน */
+    font-size: 16px;        /* ขนาดตัวอักษรในช่องกรอก */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    border-radius: 4px;      /* มุมโค้ง */
+}
+.violence-Forward-details {
+    display: flex;              /* ใช้ flexbox */
+   /* จัดกลางแนวนอน */
+    align-items: flex-start;    /* เริ่มจากด้านบน */
+    width: 80%;                 /* กำหนดความกว้าง (ปรับได้ตามต้องการ) */
+    max-width: 1000px;      
+}
+
+.category-violence,
+.category-Forward {
+    display: inline-block;
+}
+
+.category-violence {
+    width: 20%;               /* กำหนดความกว้างของหมวดความรุนแรง */
+    margin-right: 10px;       /* ระยะห่างระหว่างหมวด */
+}
+
+.category-Forward {
+    width: 48%;               /* กำหนดความกว้างของหมวดการส่งต่อ */
+}
+
+
+
+
+
+

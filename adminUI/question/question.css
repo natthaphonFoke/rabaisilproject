@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: #343a40; /* สีเทาเข้ม */
+    margin-bottom: 20px;
+}
+
+.section-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 0.9rem;
+}
+
+.btn-warning, .btn-danger {
+    margin-left: 10px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.alert {
+    display: none;
+    margin-top: 20px;
+}
+.edit-input {
+    flex: 1; /* ให้ input ขยายเต็มพื้นที่ที่เหลือ */
+    margin-right: 10px; /* เพิ่มช่องว่างระหว่าง input กับปุ่ม */
+}
+
+.save-question {
+    white-space: nowrap; /* ป้องกันข้อความบันทึกถูกตัด */
+}
+/* Modal Fade-in Animation */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px); /* เริ่มต้นที่ตำแหน่งเลื่อนขึ้น */
+    opacity: 0; /* ซ่อนเริ่มต้น */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Modal Showing */
+.modal.fade.show .modal-dialog {
+    transform: translateY(0); /* เลื่อนมาที่ตำแหน่งปกติ */
+    opacity: 1; /* แสดง */
+}

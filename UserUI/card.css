@@ -1,0 +1,59 @@
+body{
+    font-family: 'Prompt', sans-serif;
+}
+/* สำหรับพื้นหลัง title */
+.title-container {
+    position: relative;
+    height: 40vh; /* ครึ่งหนึ่งของความสูงหน้าจอ */
+    background-color: #2da56e; /* พื้นหลังสีเขียว */
+    z-index: 1; /* เพื่อให้ Title อยู่ต่ำกว่าการ์ด */
+    overflow: hidden; /* ป้องกันส่วนเกิน */
+}
+
+.title01 h1 {
+    position: absolute;
+    top: 30%; /* จัดข้อความให้อยู่กลางแนวตั้ง */
+    left: 50%; /* จัดข้อความให้อยู่กลางแนวนอน */
+    transform: translate(-50%, -50%); /* จัดข้อความตรงกลางทั้งสองแกน */
+    color: rgb(253, 253, 253);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2; /* ให้ข้อความอยู่เหนือพื้นหลัง */
+}
+
+/* สำหรับ Container และ Card */
+.container {
+    position: relative;
+    z-index: 3; /* ให้อยู่เหนือพื้นหลัง */
+    margin-top: -10vh; /* ดึงการ์ดขึ้นมาให้ทับกับพื้นหลัง */
+}
+
+.survey-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+}
+
+.survey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.survey-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.survey-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}

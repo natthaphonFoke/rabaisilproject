@@ -1,0 +1,210 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f9f9f9;
+}
+header {
+    
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+.card-custom {
+    border: 1px solid #ddd; /* กรอบเส้นที่บาง */
+    border-radius: 8px; /* มุมที่โค้งมน */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+    transition: transform 0.3s ease; /* การเคลื่อนไหวเมื่อโฮเวอร์ */
+}
+
+.card-custom:hover {
+    transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อโฮเวอร์ */
+}
+
+h5 {
+    font-size: 1.25rem; /* ขนาดตัวอักษรหัวเรื่อง */
+    font-weight: bold; /* ตัวหนา */
+}
+
+p {
+    font-size: 1rem; /* ขนาดตัวอักษรของเนื้อหา */
+    color: #555; /* สีของข้อความ */
+}
+
+.btn-custom {
+    background-color: #458B74;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #356A57;
+}
+.chart-container {
+    padding: 15px;
+    text-align: center;
+}
+.table-container {
+    padding: 20px;
+}
+.form-select, .form-control {
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.pagination .page-item.active .page-link {
+    background-color: #458B74;
+    border-color: #458B74;
+}
+/* General container and spacing */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card style */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Chart container spacing */
+.chart-container {
+    padding: 20px;
+}
+
+/* Table styles */
+.table-container table {
+    font-size: 0.95rem;
+}
+
+.table-container table th, 
+.table-container table td {
+    vertical-align: middle;
+}
+
+.table-container .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+}
+
+/* Search input */
+#searchInput {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Hover effect */
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Add shadow to card */
+.shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Modern table styling */
+.modern-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงาอ่อน */
+}
+
+/* Table Header */
+.modern-table thead {
+    background-color: #458B74; /* สีเขียวใหม่ */
+    color: white; /* ตัวอักษรสีขาว */
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Header Cell */
+.modern-table thead th {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* Table Rows */
+.modern-table tbody tr {
+    background-color: #f5f7f6; /* สีขาวอมเทา */
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Odd Rows */
+.modern-table tbody tr:nth-child(odd) {
+    background-color: #d2e6df; /* สีเขียวอ่อน */
+}
+
+/* Hover Effect */
+.modern-table tbody tr:hover {
+    background-color: #bcd4c9; /* สีเขียวเข้มขึ้นเมื่อ hover */
+}
+
+/* Table Cell */
+.modern-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; /* ขอบล่าง */
+    text-align: left;
+}
+
+/* Last Row No Border */
+.modern-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Sortable Column Icons */
+.modern-table th i {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    color: #d2e6df; /* สีเขียวอ่อน */
+    transition: color 0.2s ease-in-out;
+}
+
+.modern-table th:hover i {
+    color: #ffffff; /* เปลี่ยนสี icon เมื่อ hover */
+}
+/* กำหนดรูปแบบกล่อง Legend */
+.legend-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* วงกลมสี */
+.color-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* ข้อความ Legend */
+.legend-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+/* Legend Container */
+#legendContainer {
+    display: flex;
+    flex-wrap: wrap; /* เลื่อนไปบรรทัดใหม่ถ้าพื้นที่ไม่พอ */
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    gap: 15px; /* ระยะห่างระหว่างกล่อง */
+}

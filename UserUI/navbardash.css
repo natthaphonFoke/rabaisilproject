@@ -1,0 +1,25 @@
+
+.navbar-custom {
+    background-color: #4b8063;
+    /* สีเขียวเข้ม */
+}
+
+.navbar-custom .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-custom .nav-link:hover {
+    color: #d7d7d7;
+    /* สีเทาอ่อน */
+}
+
+.navbar-custom .user-profile {
+    color: white;
+    font-weight: bold;
+}

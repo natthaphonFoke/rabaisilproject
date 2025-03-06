@@ -1,0 +1,261 @@
+/* CSS Refactored for Maintainability and Reusability */
+
+:root {
+    --primary-color: #458B74; /* Dark Green */
+    --secondary-color: #c4e3d5; /* Light Green */
+    --background-color: #e0f0e8; /* Light Background Green */
+    --text-color: #ffffff; /* White */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Customization */
+.navbar-custom {
+    background-color: var(--primary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--text-color);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-custom .user-profile {
+    font-weight: bold;
+}
+
+/* Base Styling */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Card Styling */
+.card, .card-custom, .card-custom-gender {
+    border: none;
+    box-shadow: 0px 0px 15px var(--shadow-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: var(--text-color);
+    text-align: center;
+}
+
+.card-custom-gender {
+    height: auto;
+}
+
+/* Button Customization */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: darken(var(--primary-color), 10%); /* Darker on hover */
+}
+
+#sortByIdBtn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.dropdown-item {
+    color: var(--primary-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Chart Container */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.chart-container, .chart-container-gender {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.chart-container {
+    max-width: 300px;
+    height: 300px;
+}
+
+.chart-container-gender {
+    max-width: 600px;
+    height: 400px;
+}
+
+/* Table Styling */
+.table-striped {
+    background-color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px var(--shadow-color);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.table-striped thead {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.table-striped tbody tr:hover {
+    background-color: var(--background-color);
+}
+
+.table-striped th, .table-striped td {
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Result Text Styling */
+.result-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Card Customization */
+.card-custom-horizontal {
+    border: none;
+    box-shadow: 0px 0px 15px var(--shadow-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--text-color);
+    text-align: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Label Box */
+.label-box {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.color-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.label-text {
+    font-size: 12px;
+    color: #495057;
+    font-weight: bold;
+}
+
+.horizontal-box-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Custom Percentages */
+#totalCount, #Harshinformation, #Selecteddata, #Harshinformationoffaculty {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* จัดการการแสดงผลเปอร์เซ็นต์ */
+.condition-level {
+    display: flex;
+    text-align: left;
+    justify-content: space-between; /* ให้ข้อความและเปอร์เซ็นต์อยู่คนละฝั่ง */
+    margin: 5px 0; /* ช่องว่างระหว่างบรรทัด */
+    font-size: 0.8rem; /* ขนาดตัวอักษรเล็กลง */
+    color: rgb(76, 76, 76); /* ชื่อระดับเป็นสีดำ */
+}
+
+.condition-level span.value {
+    color: #458B74; /* ตัวเลขเปอร์เซ็นต์เด่นและใช้ธีมสี */
+    text-align: left;
+    font-weight: bold; /* ตัวเลขเปอร์เซ็นต์หนา */
+    font-size: 1rem; /* ทำให้ตัวเลขใหญ่กว่าเล็กน้อย */
+}
+
+.condition-header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem; /* ขนาดหัวข้อหลัก */
+    color: #458B74;
+    margin-bottom: 10px;
+}
+
+.sort-icon {
+    font-size: 0.8em;
+    margin-left: 5px;
+    cursor: pointer;
+    color: gray;
+}
+.sort-icon.active {
+    color: black;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chart-container-gender {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .btn-custom {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .result-text {
+        font-size: 1rem;
+    }
+}

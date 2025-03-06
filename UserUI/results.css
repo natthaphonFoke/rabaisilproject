@@ -1,0 +1,66 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    color: #3dae4a;
+    margin-bottom: 20px;
+}
+
+.result-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f4f8;
+}
+
+.risk-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.risk-level {
+    font-size: 20px;
+    color: #FF5722;
+}
+
+.consultation-button {
+    text-align: center;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}

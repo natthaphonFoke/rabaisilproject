@@ -1,0 +1,343 @@
+body {
+    background: #afe0be;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    /* ทำให้ container อยู่ตรงกลาง */
+    overflow-y: auto;
+    /* เปิดการเลื่อนเมื่อเนื้อหายาวเกิน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Prompt', sans-serif;
+}
+.navbar-custom {
+    background-color: #4b8063;
+    /* สีเขียวเข้ม */
+}
+
+.navbar-custom .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-custom .nav-link:hover {
+    color: #d7d7d7;
+    /* สีเทาอ่อน */
+}
+
+.navbar-custom .user-profile {
+    color: white;
+    font-weight: bold;
+}
+p{
+    text-align: right;
+}
+/* เพิ่มการจัดตำแหน่งข้อมูลทั้งหมดให้ชิดซ้าย */
+.left-align {
+    text-align: left;
+}
+
+/* กำหนดการจัดตำแหน่งข้อความใน .list-group-item ให้ชิดซ้าย */
+/* เพิ่มระยะห่างระหว่างกรอบใน .list-group-item */
+.list-group-item,h3 {
+    text-align: left; /* ข้อความชิดซ้าย */
+    margin-bottom: 15px; /* เว้นระยะห่างด้านล่างของแต่ละกรอบ */
+}
+
+/* เพิ่มความยืดหยุ่นในการเว้นระยะห่างให้มากขึ้น */
+.list-group {
+    margin-top: 15px; /* เพิ่มระยะห่างด้านบนของกลุ่มรายการ */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.record {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record-id {
+    font-weight: bold;
+}
+
+.record-details {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.detail-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.detail-button:hover {
+    background-color: #514fc4;
+}
+.custom-btn {
+    background-color:#FFD646;
+    padding: 10px 20px; /* ขนาดของปุ่ม */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    font-weight: bold; /* ตัวหนา */
+    border-radius: 12px; /* มุมโค้งของปุ่ม */
+    border: 2px solid #FFD646;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงสีและขยายขนาดเมื่อโฮเวอร์ */
+    float: left; /* ให้ปุ่มชิดซ้าย */
+}
+
+.custom-btn:hover {
+    background-color: #299a47; /* สีเมื่อ hover (สามารถเปลี่ยนตามต้องการ) */
+    transform: scale(1.05); /* ขยายขนาดปุ่มเมื่อ hover */
+    border: 2px solid #299a47;
+}
+
+.custom-btn:active {
+    transform: scale(0.98); /* ขยับขนาดเล็กลงเมื่อกด */
+}
+
+.custom-btn:focus {
+    outline: none; /* ลบเส้นขอบเมื่อกด */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ focus */
+}
+.header {
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    color: #333; /* สีของข้อความ */
+    text-align: left; /* จัดข้อความกึ่งกลาง */
+    padding: 10px 0; /* ระยะขอบบนล่าง */
+    border-bottom: 2px solid #4CAF50; /* เส้นขอบล่าง */
+    
+}
+#filterButton {
+    font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ที่เข้ากับภาษาไทย */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    color: #ffffff; /* สีตัวอักษร */
+    background-color: #4CAF50; /* สีพื้นหลัง */
+    border: none; /* เอาเส้นขอบออก */
+    border-radius: 8px; /* มุมโค้ง */
+    padding: 10px 20px; /* ระยะขอบภายใน */
+    cursor: pointer; /* เปลี่ยนเป็นลูกศรเมื่อชี้ */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่มแอนิเมชัน */
+    width: 80px; /* กำหนดความกว้าง */
+    height: 50px;
+}
+#filterButton:hover {
+    background-color: #45a049; /* สีพื้นหลังเมื่อชี้ */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้น */
+}
+
+.form-select {
+    font-family: 'Prompt', sans-serif; /* ฟอนต์ภาษาไทย */
+    padding: 8px 12px; /* ลด padding ให้ดูเล็กลง */
+    width: 100px; /* กำหนดความกว้างให้ใหญ่กว่าปุ่มเล็กน้อย */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    color: #333; /* สีของข้อความ */
+    background-color: #ffffff; /* พื้นหลัง */
+    border: 1px solid #4CAF50; /* สีขอบ */
+    border-radius: 8px; /* มุมโค้ง */
+    padding: 10px; /* ระยะขอบภายใน */
+    width: 25%; /* ความกว้างเต็ม */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    appearance: none; /* ปิดสไตล์เริ่มต้น */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่มแอนิเมชัน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+.form-select:focus {
+    border-color: #45a049; /* เปลี่ยนสีขอบเมื่อโฟกัส */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้นเมื่อโฟกัส */
+    outline: none; /* ปิดกรอบเริ่มต้น */
+}
+.filter-container {
+    display: flex;
+    align-items: center; /* จัดให้ชิดบนบรรทัดเดียวกัน */
+    gap: 10px; /* ระยะห่างระหว่างแต่ละองค์ประกอบ */
+}
+.search-bar {
+    display: flex;
+    justify-content: space-between; /* จัดให้มีระยะห่างระหว่างข้อความและตัวเลือก */
+    align-items: center; /* จัดแนวตั้งให้ตรงกัน */
+}
+
+.search-bar .header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left; /* ชิดซ้ายสำหรับคำว่า 'รายการผู้รับคำปรึกษา' */
+    flex: 1; /* ทำให้ข้อความขยายได้ */
+}
+
+.form-select {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10px;
+}
+
+#filterButton {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10px;
+}
+#searchInput {
+    font-size: 14px; /* ขนาดตัวอักษร */
+    padding: 6px 10px; /* ขนาด padding */
+    width: 900px; /* ขนาดความกว้างของกล่องค้นหา */
+    border-radius: 8px; /* ขอบมน */
+    border: 1px solid #ccc; /* ขอบเส้นเรียบ */
+    display: block; /* ทำให้เป็นบล็อก */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    
+}
+
+#searchInput::placeholder {
+    font-size: 14px; /* ขนาดตัวอักษรของ placeholder */
+}
+.detail-button {
+    background-color: #4CAF50; /* เปลี่ยนสีพื้นหลัง */
+    color: white; /* เปลี่ยนสีข้อความ */
+    border: none; /* ลบขอบของปุ่ม */
+    border-radius: 4px; /* ทำมุมโค้งมน */
+    padding: 8px 16px; /* ขนาด padding */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็น pointer */
+}
+
+.detail-button:hover {
+    background-color: #FFD646; /* สีพื้นหลังเมื่อ hover */
+}
+
+.detail-button:focus {
+    outline: none; /* เอาเส้นขอบออกเมื่อ focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ focus */
+}
+
+.list-group-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px; /* ทำให้ขอบมน */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มแสงเงา */
+}
+
+.border-red {
+    border-color: red;
+}
+
+.border-yellow {
+    border-color: yellow;
+}
+
+.border-green {
+    border-color: green;
+}
+
+.btn-primary {
+    background-color: #4b8063; /* สีพื้นหลังของปุ่ม */
+    border: none; /* ลบเส้นขอบ */
+    color: #ffffff; /* สีตัวอักษร */
+    padding: 10px 20px; /* ขนาด padding */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    border-radius: 8px; /* ขอบมน */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* เงาด้านหลัง */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    display: inline-block; /* จัดให้ปุ่มแสดงเป็นบล็อก */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+.btn-primary:hover {
+    background-color: #ffc107; /* สีเมื่อ hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อ hover */
+    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อย */
+}
+
+.btn-primary:active {
+    background-color: #004085; /* สีเมื่อกด */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* เงาเมื่อกด */
+    transform: translateY(0); /* ปุ่มกลับไปที่เดิม */
+}
+body {
+    font-family: 'Prompt', sans-serif;
+}
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-body p {
+    margin: 0; /* เอาการเว้นบรรทัดของ <p> ออก */
+    white-space: nowrap; /* บังคับให้ข้อความไม่ตัดบรรทัด */
+}
+.btn-container {
+    margin-top: 10px;
+}
+table {
+    text-align: left;
+    width: 500px; /* หรือกำหนดเป็น px เช่น width: 800px; */
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    width: 250px; /* ลดช่องว่างในเซลล์ */
+   
+    
+}
+td{
+    text-align: left;
+}

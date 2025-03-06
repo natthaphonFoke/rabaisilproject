@@ -1,0 +1,164 @@
+body{
+  font-family: 'Prompt', sans-serif;
+}
+/* Variables for Global Colors and Shadows */
+:root {
+  --primary-color: #458B74; /* Dark Green */
+  --secondary-color: #c4e3d5; /* Light Green */
+  --background-color: #e0f0e8; /* Light Background Green */
+  --text-color: #ffffff; /* White */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn-custom {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #366659; /* Darker green on hover */
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--primary-color);
+  
+}
+
+.question-container {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* จัดให้อยู่ตรงกลาง */
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.radio-group .label-left {
+  font-weight: bold;
+  color: #039710;
+}
+.radio-group .label-right{
+  font-weight: bold;
+  color: #a43636;
+}
+
+.rating label {
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+  margin-bottom: 50px;
+}
+/* ซ่อน input radio */
+     input[type="radio"] {
+        display: none;
+      }
+      /* สไตล์ของกลุ่มปุ่ม */
+      .radio-group {
+        
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        margin: 20px 0;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.2s;
+      }
+      
+      /* ป้ายข้อความด้านซ้ายและขวา */
+      .label-left {
+        color: #28a745;
+        font-weight: bold;
+        margin-right: 1em;
+      }
+      .label-right {
+        color: #b55151;
+        font-weight: bold;
+        margin-left: 1em;
+      }
+      /* สไตล์ของ label */
+      .radio-label {
+        position: relative;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+      }
+      /* วงกลมปุ่ม */
+      .radio-label:before {
+        content: "";
+        display: inline-block;
+        border: 2px solid #28a745;
+        border-radius: 50%;
+        transition: 0.2s;
+      }
+      .radio-label1:before {
+        content: "";
+        display: inline-block;
+        border: 2px solid #a72828;
+        border-radius: 50%;
+        transition: 0.2s;
+      }
+      .radio-label2:before {
+        content: "";
+        display: inline-block;
+        border: 2px solid #7a7a7a;
+        border-radius: 50%;
+        transition: 0.2s;
+      }
+      /* ขนาดต่างๆ ของปุ่ม */
+      .radio-size-5:before {
+        width: 2.5em;
+        height: 2.5em;
+      }
+      .radio-size-4:before {
+        width: 2.2em;
+        height: 2.2em;
+      }
+      .radio-size-3:before {
+          width: 1.5em;
+          height: 1.5em;
+      }
+      .radio-size-2:before {
+          width: 2.2em;
+          height: 2.2em;
+      }
+      .radio-size-1:before {
+          width: 2.5em;
+          height: 2.5em;
+      }
+      /* เมื่อเลือกปุ่ม */
+      input[type="radio"]:checked + .radio-label:before {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+      input[type="radio"]:checked + .radio-label1:before {
+          background-color: #a72828;
+        border-color: #a72828;
+      }
+      input[type="radio"]:checked + .radio-label2:before {
+          background-color: #a3a3a3;
+        border-color: #a3a3a3;
+      }
+/* ซ่อน input radio */

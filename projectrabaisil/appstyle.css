@@ -1,0 +1,520 @@
+body {
+    background: #afe0be;
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    /* ทำให้ container อยู่ตรงกลาง */
+    overflow-y: auto;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงา */
+}
+
+h2 {
+    font-size: 30px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ตัวหนา */
+    color: #333;
+    /* สีของข้อความ */
+    text-align: left;
+    /* จัดข้อความกึ่งกลาง */
+    padding: 10px 0;
+    /* ระยะขอบบนล่าง */
+    border-bottom: 2px solid #4CAF50;
+}
+
+.container .title {
+    font-size: 40px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ตัวหนา */
+    color: #333;
+    /* สีของข้อความ */
+    text-align: left;
+    /* จัดข้อความกึ่งกลาง */
+    padding: 10px 0;
+    /* ระยะขอบบนล่าง */
+    border-bottom: 2px solid #4CAF50;
+}
+
+.container .topic {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+    color: #000;
+    /* สีข้อความเป็นสีดำ */
+    font-size: 17px;
+    /* ขนาดตัวอักษร */
+
+}
+
+.container .title1,
+form .channel-details,
+form .gender-details .gender-title,
+form .origin-details {
+    text-align: left;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .detail {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #c8c5c9;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+
+.save-button {
+    display: block;
+    /* ทำให้ปุ่มเป็น block element */
+    margin-left: auto;
+    /* เพิ่มระยะห่างด้านซ้ายเพื่อให้ชิดขวา */
+    display: block;
+    /* ทำให้ปุ่มเป็นบล็อก */
+    background-color: #ccc;
+    /* สีพื้นหลังเป็นสีเทา */
+    color: white;
+    /* สีตัวอักษร */
+    border: none;
+    /* ไม่มีขอบ */
+    padding: 10px 20px;
+    /* ระยะห่างภายในปุ่ม */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    border-radius: 5px;
+    /* มุมขอบโค้งมน */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+    transition: background-color 0.3s ease;
+    /* ทำให้การเปลี่ยนสีเนียน */
+}
+
+
+
+/* สไตล์เมื่อ hover (เมื่อวางเมาส์เหนือปุ่ม) */
+.save-button:hover {
+    background-color: #a9a9a9;
+    /* เปลี่ยนเป็นสีเทาเข้มเมื่อ hover */
+}
+
+.navbar-custom {
+    background-color: #4b8063;
+    /* สีเขียวเข้ม */
+}
+
+.navbar-custom .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-custom .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-custom .nav-link:hover {
+    color: #d7d7d7;
+    /* สีเทาอ่อน */
+}
+
+.navbar-custom .user-profile {
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    /* ทำให้ container อยู่ตรงกลาง */
+    overflow-y: auto;
+    /* เปิดการเลื่อนเมื่อเนื้อหายาวเกิน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงา */
+}
+
+.calendar {
+    display: table;
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.calendar th,
+.calendar td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+}
+
+.calendar th {
+    background-color: #f8f9fa;
+}
+
+.available {
+    background-color: #d4edda;
+}
+
+.partial {
+    background-color: #fff3cd;
+}
+
+.booked {
+    background-color: #f8d7da;
+}
+
+.past {
+    background-color: #e9ecef;
+}
+
+/* สไตล์สำหรับฟอร์มเพิ่มนัดหมาย */
+.appointment-form {
+    margin-top: 20px;
+    text-align: left;
+    /* ชิดซ้าย */
+}
+
+/* สไตล์สำหรับปุ่มเลื่อนเดือน */
+.calendar-navigation {
+    display: flex;
+    justify-content: center;
+    /* จัดตำแหน่งปุ่มและชื่อเดือนตรงกลาง */
+    margin-bottom: 10px;
+}
+
+.calendar-navigation button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0 10px;
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.appointment-form {
+    text-align: left;
+    /* จัดข้อความในฟอร์มให้ชิดซ้าย */
+}
+
+input[type="date"],
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    /* เพิ่มระยะห่างด้านบน */
+    box-sizing: border-box;
+    /* รวม padding และ border เข้าไปในความกว้าง */
+    text-align: left;
+    display: inline-block;
+    /* ทำให้ช่องอยู่ชิดซ้าย */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+#major {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    /* เอา dropdown arrow แบบ default ออกในบาง browser */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 4 5"><path fill="none" stroke="%23333" stroke-width="1" d="M0 0l2 2 2-2"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* สไตล์เมื่อ focus */
+#major:focus {
+    border-color: #66afe9;
+}
+
+/* ปรับการจัดเรียงของ .channel-details และ .origin-details ให้เป็นแนวตั้ง */
+form .channel-details,
+form .origin-details {
+    display: flex;
+    flex-direction: column;
+    /* จัดให้องค์ประกอบอยู่ในแนวตั้ง */
+    align-items: flex-start;
+    /* จัดชิดซ้าย */
+    margin-bottom: 20px;
+    /* เพิ่มระยะห่างระหว่างสองบล็อก */
+}
+
+form .channel-details select,
+form .origin-details select,
+form .origin-details #referral-input input {
+    width: 100%;
+    /* ขยายให้เต็มพื้นที่ */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* ทำให้ padding รวมอยู่ในความกว้าง */
+}
+
+/* จัดการกับ input ที่แสดงเมื่อเลือก "ส่งต่อมาจาก" */
+form .origin-details #referral-input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ปรับขนาดหัวข้อของช่องทางการปรึกษาและที่มาของการให้คำปรึกษาให้พอดี */
+form .channel-details .channel-title,
+form .origin-details .origin-title {
+    margin-bottom: 10px;
+    /* เพิ่มระยะห่างระหว่างหัวข้อกับ dropdown */
+    font-size: 18px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+form .channel-details .channel-title,
+form .origin-details .origin-title {
+    background: none;
+    /* นำพื้นหลังออก */
+    border: none;
+    /* นำขอบออก */
+    padding: 0;
+    /* นำ padding ออก */
+    box-shadow: none;
+    /* นำเงาออก */
+}
+
+.past {
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+.available {
+    background-color: #d4edda;
+    color: #155724;
+    cursor: pointer;
+}
+
+.partial {
+    background-color: #fff3cd;
+    color: #856404;
+    cursor: pointer;
+}
+
+.booked {
+    background-color: #f8d7da;
+    color: #721c24;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ffc107;
+    /* สีเหลืองสำหรับวันที่เลือก */
+    color: #fff;
+    /* สีข้อความ */
+    font-weight: bold;
+
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.gender-title {
+    font-size: 18px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ตัวหนา */
+    color: #333;
+    /* สีตัวอักษร */
+    margin-bottom: 15px;
+    /* ระยะห่างจากข้อความด้านล่าง */
+}
+
+.category {
+    display: flex;
+    /* ใช้ flexbox */
+    justify-content: space-around;
+    /* กระจายช่องว่างระหว่างปุ่ม */
+    gap: 20px;
+    /* ระยะห่างระหว่างแต่ละปุ่ม */
+}
+
+.category label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* ระยะห่างระหว่างปุ่ม radio และข้อความ */
+    font-size: 16px;
+    color: #555;
+    /* สีข้อความ */
+    cursor: pointer;
+    /* เปลี่ยนเป็น pointer เมื่อชี้ */
+    transition: color 0.3s ease;
+    /* เพิ่มแอนิเมชัน */
+}
+
+.category input[type="radio"] {
+    width: 40px;
+    /* ขนาดของ radio button */
+    height: 18px;
+    accent-color: #4CAF50;
+    /* สีของ radio button */
+}
+
+.category label:hover {
+    color: #4CAF50;
+    /* สีเมื่อ hover */
+}
+
+.category input[type="radio"]:checked+.gender {
+    font-weight: bold;
+    /* ตัวหนาเมื่อเลือก */
+    color: #4CAF50;
+    /* สีข้อความที่เลือก */
+}
+
+.gender {
+    font-size: 16px;
+    color: #333;
+    /* สีข้อความ */
+}
+
+.btn-primary {
+    background-color: #4b8063;
+    /* สีพื้นหลังของปุ่ม */
+    border: none;
+    /* ลบเส้นขอบ */
+    color: #ffffff;
+    /* สีตัวอักษร */
+    padding: 10px 20px;
+    /* ขนาด padding */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    border-radius: 8px;
+    /* ขอบมน */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* เงาด้านหลัง */
+    text-decoration: none;
+    /* ลบขีดเส้นใต้ */
+    display: inline-block;
+    /* จัดให้ปุ่มแสดงเป็นบล็อก */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* เพิ่ม transition */
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;
+    /* สีเมื่อ hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    /* เพิ่มเงาเมื่อ hover */
+    transform: translateY(-2px);
+    /* ยกปุ่มขึ้นเล็กน้อย */
+}
+
+.btn-primary:active {
+    background-color: #004085;
+    /* สีเมื่อกด */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    /* เงาเมื่อกด */
+    transform: translateY(0);
+    /* ปุ่มกลับไปที่เดิม */
+}
+
+
+
+
+
+.user-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.appointment-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.appointment-list {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.appointment-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+.appointment-info span {
+    font-weight: bold;
+}
